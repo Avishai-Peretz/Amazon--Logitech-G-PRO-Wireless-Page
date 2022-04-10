@@ -189,7 +189,7 @@ header
 
 
 #nav_orders{
-    width: 85px;
+    width: 80px;
 }
 #nav_orders span {
     margin: 0;
@@ -204,7 +204,9 @@ header
 }
 #nav_cart {
     width: 85px;
+    margin-right: 70px;
 }
+
 #nav_cart{
     background: url(../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB4059375478_.png) no-repeat;
     background-position: -10px -340px;
@@ -212,6 +214,9 @@ header
     height: 26px;
     padding-top: 10px;
     position: relative;
+}
+#nav_cart:hover {
+    border: none !important;
 }
 .nav_cart_zero{
     position: absolute;
