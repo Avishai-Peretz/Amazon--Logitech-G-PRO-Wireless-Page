@@ -316,6 +316,9 @@ header
 #nav_route a {
     line-height: 14px;
 }
+#nav_route a:hover{
+    text-decoration: underline;
+}
 
 main {
     width: 1464px;
