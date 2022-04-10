@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    
+    <link rel="stylesheet" href="./styles/display.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Amazon Rebuild</title>
+</head>
+<body class="column-c-c">
+        <!-- <div style="background: url(./Screenshot\ \(96\).png) center/cover no-repeat;width: 100%; max-width: 100%; max-height: 98.3vh; height: 98.3vh; margin: 0; padding: 0;"> -->
+        <header class="navs column-c-c">
+            <nav id="first_nav" class="first_nav row-c-c">
+                <div id="first_nav_left" class="row-c-c">
+                    <div id="nav_logo" class="first__nav nav_logo"></div>
+                    <div id="nav_adress" class="row-c-fs first__nav nav_adress">
+                        <div id="nav_adress_piont"></div>
+                        <div id="nav_adres_text" class="column-c-fs">
+                            Hello                        
+                            <span>Select your address</span>
+                        </div>
+                    </div>                     
+                </div>
+                <div id="first_nav_center" class="row-c-c">
+                    <div id="first_nav_center_container" class="row-c-sb">
+                        <div id="nav_center_select_container" class="first__nav nav_search row-c-sb">
+                            <div id="nav_center_select" class="first__nav nav_search row-c-fs">
+                                <select name="all" id="all" value="all">
+                                    <option selected="selected" value="search-alias=aps">All</option>
+                                    <option selected="selected" value="search-alias=aps">All Departments</option>
+                                    <option value="search-alias=alexa-skills">Alexa Skills</option>
+                                    <option value="search-alias=amazon-devices">Amazon Devices</option>
+                                    <option value="search-alias=live-explorations">Amazon Explore</option>
+                                    <option value="search-alias=amazon-pharmacy">Amazon Pharmacy</option>
+                                    <option value="search-alias=warehouse-deals">Amazon Warehouse</option>
+                                    <option value="search-alias=appliances">Appliances</option>
+                                    <option value="search-alias=mobile-apps">Apps &amp; Games</option>
+                                    <option value="search-alias=arts-crafts">Arts, Crafts &amp; Sewing</option>
+                                    <option value="search-alias=audible">Audible Books &amp; Originals</option>
+                                    <option value="search-alias=automotive">Automotive Parts &amp; Accessories</option>
+                                    <option value="search-alias=courses">AWS Courses</option>
+                                    <option value="search-alias=baby-products">Baby</option>
+                                    <option value="search-alias=beauty">Beauty &amp; Personal Care</option>
+                                    <option value="search-alias=stripbooks">Books</option>
+                                    <option value="search-alias=popular">CDs &amp; Vinyl</option>
+                                    <option value="search-alias=mobile">Cell Phones &amp; Accessories</option>
+                                    <option value="search-alias=fashion">Clothing, Shoes &amp; Jewelry</option>
+                                    <option value="search-alias=fashion-womens">&nbsp;&nbsp;&nbsp;Women</option>
+                                    <option value="search-alias=fashion-mens">&nbsp;&nbsp;&nbsp;Men</option>
+                                    <option value="search-alias=fashion-girls">&nbsp;&nbsp;&nbsp;Girls</option>
+                                    <option value="search-alias=fashion-boys">&nbsp;&nbsp;&nbsp;Boys</option>
+                                    <option value="search-alias=fashion-baby">&nbsp;&nbsp;&nbsp;Baby</option>
+                                    <option value="search-alias=collectibles">Collectibles &amp; Fine Art</option>
+                                    <option value="search-alias=computers">Computers</option>
+                                    <option value="search-alias=financial">Credit and Payment Cards</option>
+                                    <option value="search-alias=edu-alt-content">Digital Educational Resources</option>
+                                    <option value="search-alias=digital-music">Digital Music</option>
+                                    <option value="search-alias=electronics">Electronics</option>
+                                    <option value="search-alias=lawngarden">Garden &amp; Outdoor</option>
+                                    <option value="search-alias=gift-cards">Gift Cards</option>
+                                    <option value="search-alias=grocery">Grocery &amp; Gourmet Food</option>
+                                    <option value="search-alias=handmade">Handmade</option>
+                                    <option value="search-alias=hpc">Health, Household &amp; Baby Care</option>
+                                    <option value="search-alias=local-services">Home &amp; Business Services</option>
+                                    <option value="search-alias=garden">Home &amp; Kitchen</option>
+                                    <option value="search-alias=industrial">Industrial &amp; Scientific</option>
+                                    <option value="search-alias=prime-exclusive">Just for Prime</option>
+                                    <option value="search-alias=digital-text">Kindle Store</option>
+                                    <option value="search-alias=fashion-luggage">Luggage &amp; Travel Gear</option>
+                                    <option value="search-alias=luxury">Luxury Stores</option>
+                                    <option value="search-alias=magazines">Magazine Subscriptions</option>
+                                    <option value="search-alias=movies-tv">Movies &amp; TV</option>
+                                    <option value="search-alias=mi">Musical Instruments</option>
+                                    <option value="search-alias=office-products">Office Products</option>
+                                    <option value="search-alias=pets">Pet Supplies</option>
+                                    <option value="search-alias=luxury-beauty">Premium Beauty</option>
+                                    <option value="search-alias=instant-video">Prime Video</option>
+                                    <option value="search-alias=smart-home">Smart Home</option>
+                                    <option value="search-alias=software">Software</option>
+                                    <option value="search-alias=sporting">Sports &amp; Outdoors</option>
+                                    <option value="search-alias=specialty-aps-sns">Subscribe &amp; Save</option>
+                                    <option value="search-alias=subscribe-with-amazon">Subscription Boxes</option>
+                                    <option value="search-alias=tools">Tools &amp; Home Improvement</option>
+                                    <option value="search-alias=toys-and-games">Toys &amp; Games</option>
+                                    <option value="search-alias=under-ten-dollars">Under $10</option>
+                                    <option value="search-alias=videogames">Video Games</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="text" name="search">
+                        <button type="submit"></i></button>
+                    </div>
+                </div>
+                <div id="first_nav_right" class="row-c-c">
+                    <div id="nav_flag" class="row-c-c first__nav first_nav">
+                        <span id="nav_flag_icon"></span>
+                        <i class="fa-solid fa-caret-down"></i>           
+                    </div>
+                    <div id="nav_sign" class="column-c-c first__nav nav_sign">
+                        <span class="txt-12 fw_4">Hello, Sign in</span>
+                        <span class="txt-14 fw_7">Account & Lists <i class="fa-solid fa-caret-down txt-12"></i> </span>
+                    </div>
+                    <div id="nav_orders" class="column-c-c first__nav nav_orders">
+                        <span class="txt-12 fw_4 txt_white">Returns</span>
+                        <span class="txt-14 fw_7 txt_white">& Orders</span>
+                    </div>
+                    <div id="nav_cart" class="row-c-c first__nav txt-14 txt_white fw_7">
+                        <span class="nav_cart_zero txt-18 txt_white fw_7">0</span>
+                        <span class="nav_cart txt-16 txt_white fw_7">Cart</span>
+                    </div>
+                </div>
+            </nav>
+            <nav id="second_nav" class="second_nav row-c-fs">
+                <nav id="second_nav__left" class="second_nav row-c-c">
+                    <div id="all_menu" class="second__nav all_menu txt_white">All</div>
+                </nav>
+                <nav id="second_nav__right" class="second_nav row-c-c">
+                    <a href="" id="best_sellers" class="second__nav">Best Sellers</a>
+                    <a href="" id="amazon_basics" class="second__nav">Amazon Basics</a>
+                    <a href="" id="customer_service" class="second__nav">Customer Service</a>
+                    <a href="" id="new_releases" class="second__nav">New Releases</a>
+                    <a href="" id="today_deals" class="second__nav">Today's Deals</a>
+                    <a href="" id="prime" class="second__nav">Prime 11</a>
+                    <a href="" id="amazon_home" class="second__nav">Amazon Home</a>
+                    <a href="" id="books" class="second__nav">Books</a>
+                    <a href="" id="music" class="second__nav">Music</a>
+                    <a href="" id="registry" class="second__nav">Registry</a>
+                    <a href="" id="fashion" class="second__nav">Fashion</a>
+                    <a href="" id="kindle_books" class="second__nav">Kindle Books</a>
+                    <a href="" id="gift_cards" class="second__nav">Gift Cards</a>
+                    <a href="" id="toys" class="second__nav">Toys & Games</a>
+                    <a href="" id="sell" class="second__nav">Sell</a>
+                    <a href="" id="automotive" class="second__nav">Automotive</a>
+                    <a href="" id="pet" class="second__nav">Pet Supplies</a>
+                    <a href="" id="shopper" class="second__nav">Shopper Toolkit</a>
+                    <a href="" id="coupons" class="second__nav">Coupons</a>
+                 </nav>
+            </nav>
+            <nav id="third_nav" class="third_nav row-c-sa">
+
+               <a href="" class="computers third__nav">Computers</a> 
+
+               <a href="" class="laptops third__nav">Laptops</a> 
+
+               <a href="" class="desktops third__nav">Desktops</a> 
+
+               <a href="" class="monitors third__nav">Monitors</a> 
+
+               <a href="" class="tablets third__nav">Tablets</a> 
+
+               <a href="" class="computer_accessories third__nav">Computer Accessories</a> 
+
+               <a href="" class="pc_components third__nav">Pc Components</a> 
+
+               <a href="" class="pc_gaming  third__nav">Pc Gaming</a> 
+
+               <a href="" class="deals third__nav">Deals</a> 
+
+            </nav>   
+            <nav id="nav_advertize" class="column-c-c"></nav>    
+            <nav id="nav_route" class="row-c-fs">
+                <a href="" class="txt-12 txt_black txt_deco fw_4">Video Games</a> &nbsp; › &nbsp; 
+                <a href="" class="txt-12 txt_black txt_deco fw_4">PC</a> &nbsp; › &nbsp; 
+                <a href="" class="txt-12 txt_black txt_deco fw_4">Accessories</a> &nbsp; › &nbsp; 
+                <a href="" class="txt-12 txt_black txt_deco fw_4">Gaming Mice</a>
+            </nav>            
+        </header>
+        <main class="row-fs-c">
+            <div id="left_gallery_container">
+            <div id="left_gallery">
+                <div id="small_pic_1" class="gallery_pic"></div>
+                <div id="small_pic_2" class="gallery_pic"></div>
+                <div id="small_pic_3" class="gallery_pic"></div>
+                <div id="small_pic_4" class="gallery_pic"></div>
+                <div id="small_pic_5" class="gallery_pic"></div>
+                <div id="small_pic_6" class="gallery_pic"></div>
+            </div>
+            </div>
+            <div id="big_pic"></div>
+            <div id="description" class="column-fs-fs">
+                <h2 class="txt-24 fw_5">Logitech G PRO Wireless Gaming Mouse - Lightspeed, Hero 25K Sensor, 25,600 DPI, RGB, 4-8 Customizable Buttons, Ambidextrous, Official League of Legends Edition</h1>
+                <a id="visit_logi" href="" class="txt-14 txt_blue txt_deco">Visit the Logitech G Store</a>
+                <div id="rating" class="row-c-fs txt-14 txt_deco txt_black">
+                    <div id="stars_container" class="row-c-fs txt-14 txt_deco txt_blue">
+                        <div id="stars"></div>
+                        <div id="stars_arrow"></div>
+                        <a href="" class="txt-14 txt_blue txt_deco">10,266 ratings</a>
+                    </div>
+                    &nbsp;&nbsp;|
+                    <a href="" class="txt-14 txt_blue txt_deco">228 answered questions</a>
+                </div>
+                <div id="climate_container">
+                    <a href="" class="txt-14 txt_green txt_deco row-c-fs">
+                        <img src="https://m.media-amazon.com/images/I/111pigi1ylL.png" alt="">
+                        <span class="txt-14 txt_green txt_deco">Climate Pledge Friendly</span>
+                    </a>
+                </div>
+                <div id="price_container" class="price_container row-fs-fs fw_5">
+                    <span id="main_price_dollar" class="txt_black txt-13 fw_5">$</span>
+                    <span id="main_price" class="txt_black txt-28 fw_5">129</span>
+                    <span id="main_price_fraction" class="txt_black txt-13 fw_5">99</span>
+                </div>
+                <div id="free_returns_main" class="returns_container row-c-fs">
+                    & &nbsp; <a href="" class="txt-14 txt_blue txt_deco">FREE Returns</a>
+                    <div id="returns_arrow_main"></div>
+                </div>
+                <div id="discount_container">
+                    <a href="" class="txt-14 txt_blue txt_deco">Get $50 off instantly: Pay $79.99 <span>$129.99</span> upon approval for the Amazon Rewards Visa Card. No annual fee.</a>
+                </div>
+                <div id="style_main_container" class="txt_black txt-14 fw_5">
+                    style: <span class="txt_black txt-14 fw_7">G Pro Mouse- League of Legends Edition</span>
+                </div>
+                <div id="models_main" class="row-c-fs">
+                    <div id="standart_edition" class="txt_black txt-14 fw_5">G Pro Mouse</div>
+                    <div id="league_edition" class="txt_black txt-14 fw_5">G Pro Mouse- League of Legends Edition</div>
+                    <div id="shroud_edition" class="txt_black txt-14 fw_5">G Pro Mouse- Shroud Editon</div>
+                </div>
+                <div id="pattern_name" class="txt_black txt-14 fw_5">
+                    Pattern Name: <span class="txt_black txt-14 fw_7">Mouse only</span>
+                </div>
+                <div id="bundles_main" class="row-c-fs">
+                    <div id="keyboard_bundle" class="txt_black txt-14 fw_5">mouse + G Pro Keyboard</div>
+                    <div id="power_play_bundle" class="txt_black txt-14 fw_5">Mouse + POWERPLAY</div>
+                    <div id="mouse_only_bundle" class="txt_black txt-14 fw_5">Mouse only</div>
+                    <div id="g640_bundle" class="txt_black txt-14 fw_5">Mouse + G640 Mousepad</div>
+                </div>
+                <div id="specs_container" class="column-fs-fs">
+                    <div id="connectivity_container" class="row-c-fs">
+                        <div id="connectivity"  class="specs_main txt_black txt-14 fw_7">Connectivity Technology</div>
+                        <div id="connectivity_aside"  class="specs_aside txt_black txt-14 fw_5">Radio Frequency</div>
+                    </div>
+                    <div id="recommended_container" class="row-c-fs">
+                        <div id="recommended" class="specs_main txt_black txt-14 fw_7">Recommended Uses For Product</div>
+                        <div id="recommended_aside" class="specs_aside txt_black txt-14 fw_5">Office, Gaming</div>
+                    </div>
+                    <div id="brand_container" class="row-c-fs">
+                        <div id="brand" class="specs_main txt_black txt-14 fw_7">Brand</div>
+                        <div id="brand_aside" class="specs_aside txt_black txt-14 fw_5">Logitech G</div>
+                    </div>
+                    <div id="compatible_container" class="row-c-fs">
+                        <div id="compatible" class="specs_main txt_black txt-14 fw_7">Compatible Devices</div>
+                        <div id="compatible_aside" class="specs_aside txt_black txt-14 fw_5">Personal Computer</div>
+                    </div>
+                    <div id="series_container" class="row-c-fs">
+                        <div id="series" class="specs_main txt_black txt-14 fw_7">Series</div>
+                        <div id="series_aside" class="specs_aside txt_black txt-14 fw_5">PRO Wireless Gaming Mouse League of Legends Edition</div>
+                    </div>
+                    <div id="about_container" class="column-fs-fs">
+                        <h4>About this item</h4>
+                        <ul>
+                            <li>Designed to inspire, chosen for champions: Take your game to the next level with the proven precision of Logitech G PRO Wireless Gaming Mouse, crafted to inspire League of Legends players</li>
+                            <li>LIGHTSPEED wireless: Pro grade performance overcomes the traditional limitations of wireless latency, connectivity, and power to deliver super-fast 1 ms report rate connection
+                            </li>
+                            <li>HERO 25K sensor: Delivers peak performance at any sensitivity with zero smoothing, acceleration, or filtering; the computer mouse is optimized to track insane flicks at speeds over 400 IPS</li>
+                            <li>Ultra-lightweight: The mouse's innovative endoskeleton creates a super-thin yet incredibly strong outer shell, enabling the body to weigh in at a lightweight and maneuverable 2.8 oz (80 g)</li>
+                            <li>Ergonomic ambidextrous design: Tournament-ready gaming mouse developed with esports pros and gamers for maximum comfort, control and durability</li>
+                            <li>4-8 programmable buttons: Removable left and right side buttons make the portable mouse truly ambidextrous; decide how many side buttons you need from 0 to 4</li>
+                            <li>LIGHTSYNC RGB: 16.8 M colors allow you to represent your team colors, personalize your setup, or synchronize with other Logitech G products; never pause the game with 48 h play time, 60 h without RGB</li>
+                            <li>Onboard memory: Use G HUB to save your preferences directly to the wireless mouse for fast and easy use on gaming tournament systems; your mouse settings remain consistent from home to stage</li>
+                        </ul>
+                    </div>
+                    <div id="compare_container" >
+                        <a href="" class="txt-14 txt_blue txt_deco">Compare with similar items</a>
+                    </div>
+                    <div id="offers_container">
+                        <a href="" class="txt-14 txt_blue txt_deco">New (8) from <span class="txt_red">$129.99 </span></a>
+                        & <span class="txt_black txt-14 fw_7">FREE Shipping</span>
+                    </div>
+                </div>
+            </div>
+            <aside id="buy" class="column-fs-fs">
+                <section id="aside_main" class="column-fs-fs">
+                    <div id="price_container" class="price_container row-fs-fs">
+                        <span id="main_price_dollar" class="txt_black txt-13">$</span>
+                        <span id="main_price" class="txt_black txt-28">129</span>
+                        <span id="main_price_fraction" class="txt_black txt-13">99</span>
+                    </div>
+                    <div id="dlivery_container" class="column-sb-fs">
+                        <div id="free_returns_main" class="returns_container row-c-fs">
+                            & &nbsp; <a href="" class="txt-14 txt_blue txt_deco">FREE Returns</a>
+                            <div id="returns_arrow_main"></div>
+                        </div>
+                        <div id="delivery_price" class="txt-14 txt_black fw_7">
+                            <a href="" class="txt-14 txt_blue txt_deco fw_5">FREE Delivery</a>
+                            Thursday, April 14
+                        </div>
+                        <div id="delivery_time" class="txt-14 txt_black fw_5">Or fastest delivery 
+                            <span class="txt-14 txt_black fw_7">Tuesday, April 12.</span>
+                            Order within 
+                            <span class="txt-14 txt_green fw_5">2 hrs</span>
+                        </div>
+                        <div id="delivery_location" class="row-c-fs">
+                            <div id="delivery_point"></div>
+                            <a href="" class="txt-12 txt_blue txt_deco fw_5">Select delivery location</a>
+                        </div>
+                    </div>
+                    <div id="stock_container">
+                        <span class="txt_green txt-18 fw_5">In Stock</span>
+                    </div>
+                    <div id="quantity_container">
+                        <span class="txt_black txt-12 fw_5">Qty:</span>
+                        <select name="quantity" autocomplete="off" id="quantity" tabindex="0" data-action="a-dropdown-select" class="" aria-pressed="false">
+                        <option value="1" selected="">1 </option>
+                        <option value="2">2 </option>
+                        <option value="3">3 </option>
+                        <option value="4">4 </option>
+                        <option value="5">5 </option> 
+                        <option value="6">6 </option>
+                        <option value="7">7 </option>
+                        <option value="8">8 </option> 
+                        <option value="9">9 </option>
+                        <option value="10">10 </option>
+                        <option value="11">11 </option>
+                        <option value="12">12 </option>
+                        <option value="13">13 </option>
+                        <option value="14">14 </option>
+                        <option value="15">15 </option>
+                        <option value="16">16 </option>
+                        <option value="17">17 </option>
+                        <option value="18">18 </option>
+                        <option value="19">19 </option>
+                        <option value="20">20 </option>
+                        <option value="21">21 </option>
+                        <option value="22">22 </option>
+                        <option value="23">23 </option>
+                        <option value="24">24 </option>
+                        <option value="25">25 </option>
+                        <option value="26">26 </option>
+                        <option value="27">27 </option>
+                        <option value="28">28 </option>
+                        <option value="29">29 </option>
+                        <option value="30">30 </option>          
+                        </select>
+                    </div>
+                    <div id="buttons_container" class="column-se-c">
+                        <button id="add_btn" class="add_btn">Add to Cart</button>
+                        <button id="buy_btn">Add to Cart</button>
+                    </div>
+                    <div id="secure_container">
+                        <img src="https://images-na.ssl-images-amazon.com/images/G/01/x-locale/checkout/truespc/secured-ssl._CB485936932_.png" alt="">
+                        <a href="" class="txt-14 txt_blue txt_deco">Secure transaction</a>
+                    </div>
+                    <span class="txt-12">Ships from &nbsp; Amazon.com</span>
+                    <span class="txt-12">Sold by &nbsp; &nbsp; &nbsp; &nbsp; Amazon.com</span>
+                    <div id="policy" class="txt-14">
+                        Return policy: 
+                        <a href=""  class="txt-14 txt_blue txt_deco">
+                            Eligible for Return, Refund or Replacement within 30 days of receipt<div id="policy_arrow"></div>
+                        </a> 
+                    </div>
+                    <div id="support" class="txt-14">
+                        Support: 
+                        <a href=""  class="txt-14 txt_blue txt_deco">
+                            Free Amazon tech support included <div id="support_arrow"></div>
+                        </a> 
+                    </div>
+                    <div id="prime_container">
+                        <a href="" id="pime_link" class="txt-14 txt_blue txt_deco">
+                            <div id="prime_logo"><img src="https://m.media-amazon.com/images/G/01/marketing/prime/new_prime_logo_RGB_blue._CB426090081_.png" alt=""></div>
+                            <p class="txt-14 fw_7 txt_black txt_deco">Enjoy fast, FREE delivery, exclusive deals and award-winning movies & TV shows with Prime</p>
+                            <div id="try_prime" class="txt-14 fw_5 txt_black txt_deco"><span class="txt-14 txt_blue txt_deco">Try Prime</span> Try Prime and start saving today with <span class="txt-14 fw_7 txt_black txt_deco">Fast, FREE Delivery</span></div>
+                        </a>
+                    </div>
+                    <div id="protection_container" class="column-se-fs">
+                        <h5>Add a Protection Plan:</h5>
+                        <div id="check_container_1">
+                            <input type="checkbox" id="protection_1" name="protection_1" checked>
+                            <label for="protection_1"><a href="" class="txt-14 txt_blue txt_deco">4-Year Protection</a> for <span class="txt-14 txt_red">$29.99</span></label>
+                        </div>
+                        <div id="check_container_2">
+                            <input type="checkbox" id="protection_2" name="protection_2" checked>
+                            <label for="protection_2"><a href="" class="txt-14 txt_blue txt_deco">3-Year Protection</a> for <span class="txt-14 txt_red">$21.99</span></label>
+                        </div>
+                    </div>
+                    <div id="check_container_3" class="row-fs-fs">
+                        <input type="checkbox" id="add_gift" name="add_gift" checked>
+                        <label for="add_gift"  class="txt-14 fw_5 txt_black"><br> Add a gift receipt for easy returns</label>
+                    </div>
+                    <button id="btn_add_to_list" class="txt-14 fw_5 txt_black">Add to List</button>
+                </section>
+                <section id="offer_1" class="column-c-sb">
+                    <div id="offer_1_txt"></div>
+                        <h5>New (8) from</h5>
+                        <p class="txt-14"><span class="txt_red txt-14 fw_5">$129.99 </span>& <span class="fw_7 ">FREE Shipping</span></p>
+                    </div>
+                    <div id="offer_arrow"></div>
+                </section>
+                <section id="share" class="row-c-c txt-14 fw_5">
+                    <span>Share</span>
+                        <a href="mailto:?body=I%20want%20to%20recommend%20this%20product%20at%20Amazon%0A%0ALogitech%20G%20PRO%20Wireless%20Gaming%20Mouse%20-%20Lightspeed%2C%20Hero%2025K%20Sensor%2C%2025%2C600%20DPI%2C%20RGB%2C%204-8%20Customizable%20Buttons%2C%20Ambidextrous%2C%20Official%20League%20of%20Legends%20Edition%0Aby%20Amazon.com%0ALearn%20more%3A%20https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0972G9GL9%2Fref%3Dcm_sw_em_r_mt_dp_N0FX8RB1GJQ800Q8TZ59&subject=Check%20this%20out%20on%20Amazon" class="share_icon">                                
+                            <div id="email" class="share_icon_container"></div>
+                        </a>
+                    <a href="https://www.facebook.com/dialog/share?_encoding=UTF8&app_id=465632727431967&display=popup&href=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0972G9GL9%2Fref%3Dcm_sw_r_fa_dp_N0FX8RB1GJQ800Q8TZ59&redirect_uri=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0972G9GL9%2Fref%3Dcm_sw_s_fa_dp_N0FX8RB1GJQ800Q8TZ59&hashtag=%23Amazon" class="share_icon">                                
+                        <div id="facebook" class="share_icon_container"></div>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?original_referer=https%253A%252F%252Fwww.amazon.com%252Fgp%252Fproduct%252FB0972G9GL9%252Fref%253Dcm_sw_r_tw_dp_N0FX8RB1GJQ800Q8TZ59&text=Logitech%20G%20PRO%20Wireless%20Gaming%20Mouse%20-%20Lightspeed%2C%20Hero%2025K%20Sensor%2C%2025%2C600%20DP...&related=amazondeals%2Camazonmp3&url=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0972G9GL9%2Fref%3Dcm_sw_r_tw_dp_N0FX8RB1GJQ800Q8TZ59&via=amazon" class="share_icon">                                
+                        <div id="twitter" class="share_icon_container"></div>
+                    </a>
+                    <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB0972G9GL9%2Fref%3Dcm_sw_r_pi_dp_N0FX8RB1GJQ800Q8TZ59&description=Logitech%20G%20PRO%20Wireless%20Gaming%20Mouse%20-%20Lightspeed%2C%20Hero%2025K%20Sensor%2C%2025%2C600%20DPI%2C%20RGB%2C%204-8%20Customizable%20Buttons%2C%20Ambide...&media=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FI%2F41g9PzKj4BL.jpg" class="share_icon">                                
+                        <div id="pinterest" class="share_icon_container"></div>
+                    </a>
+                </section>
+                <section id="offer_2_4" class="row-c-c txt-14 fw-7">
+                    <header>Other Sellers on Amazon</header>
+                </section>                
+                <section id="offers_container_1" class="row-fs-sb offers_container" >
+                    <div class="column-fs-sb">
+                        <div class="txt_red txt-18 fw_5">$138.17</div>
+                        <div class="txt_black txt-14 fw_5">
+                            &                               
+                            <span class="txt_black txt-12 fw_7"> FREE Shipping</span>
+                        </div>
+                        <div class="txt_black txt-12 fw_5">Sold by: Hot Deals 4 Less</div>
+                    </div>
+                    <button class="txt-10 fw_5 add_btn small_add_btn">Add to Cart</button>
+                </section>
+                <section id="offers_container_2" class="row-fs-sb offers_container" >
+                    <div class="column-fs-sb">
+                        <div class="txt_red txt-18 fw_5">$141.76</div>
+                        <div class="txt_black txt-14 fw_5">
+                            &
+                            <span class="txt_black txt-12 fw_7"> FREE Shipping</span>
+                        </div>
+                        <div class="txt_black txt-12 fw_5">Sold by: antonline</div>
+                    </div>
+                    <button class="txt-10 fw_5 add_btn small_add_btn">Add to Cart</button>
+                </section>
+                <section id="offers_container_3" class="row-fs-sb offers_container" >
+                    <div class="column-fs-sb">
+                        <div class="txt_red txt-18 fw_5">$155.01</div>
+                        <div class="txt_black txt-14 fw_5">
+                            &
+                            <span class="txt_black txt-12 fw_7"> FREE Shipping</span>
+                        </div>
+                        <div class="txt_black txt-12 fw_5">Sold by: SpaceBound</div>
+                    </div>
+                    <button class="txt-10 fw_5 add_btn small_add_btn">Add to Cart</button>
+                </section>
+                <footer id="buy_footer_1" class="txt_black txt-12 fw_5">Have one to sell?</footer>
+                <footer id="buy_footer_2">
+                    <button id="btn_buy_footer" class="txt_black txt-14 fw_5">Sell on Amazon</button>
+                </footer>
+                </section>
+            </aside>
+        </main>
+        <footer id="footer_1" class="column-fs-fs">
+            <h2 class="txt_red txt-16 fw_7">Buy it with</h2>
+            <div id="footer_bundle_container" class="row-c-se">
+                <div id="bundle_picture_1" class="bundle_picture"></div>
+                <div class="bundle_plus txt-24 txt_gray">+</div>            
+                <a href="https://www.amazon.com/Logitech-Large-Cloth-Gaming-Mousepad/dp/B01N2B0QOY/ref=pd_day0fbt_img_sccl_1/137-5829861-8987926?pd_rd_w=6i67W&pf_rd_p=bcb8482a-3db5-4b0b-9f15-b86e24acdb00&pf_rd_r=N0FX8RB1GJQ800Q8TZ59&pd_rd_r=279f8fcd-ee9a-4324-9b74-f6e38920d0c4&pd_rd_wg=ZBWBQ&pd_rd_i=B01N2B0QOY&psc=1">
+                   <div id="bundle_picture_2" class="bundle_picture"></div>
+                </a>
+                <div class="bundle_plus txt-24 txt_gray">+</div>
+                <a href="https://www.amazon.com/Logitech-Mechanical-Tenkeyless-Detachable-LIGHTSYNC/dp/B07QQB9VCV/ref=pd_day0fbt_img_sccl_2/137-5829861-8987926?pd_rd_w=6i67W&pf_rd_p=bcb8482a-3db5-4b0b-9f15-b86e24acdb00&pf_rd_r=N0FX8RB1GJQ800Q8TZ59&pd_rd_r=279f8fcd-ee9a-4324-9b74-f6e38920d0c4&pd_rd_wg=ZBWBQ&pd_rd_i=B07QQB9VCV&psc=1">
+                    <div id="bundle_picture_3" class="bundle_picture"> </div>
+                </a>
+                <div id="btn_buy_bundle_container" class="column-fs-fs">
+                    <span class="txt_black txt-14 fw_5">Total price: <span class="txt_red txt-14 fw_5">$268.89</span></span>
+                    <div id="btn_buy_bundle" class="add_btn txt_black txt-11 fw_5">Add all three to Cart</div>
+                </div>
+            </div>
+            <div class="bundle_checkbox_1">
+                <input type="checkbox" name="bundle" value="bundle">
+                <label for="bundle" class="txt_black txt-14 fw_5"><span class="txt_black txt-14 fw_7">This item: </span> Logitech G PRO Wireless Gaming Mouse - Lightspeed, Hero 25K Sensor, 25,600 DPI, RGB, 4-8 Customizable Buttons, Ambidextrous, Official League of Legends Edition
+                    <span class="txt_red txt_14 fw_5"> $129.99</span></label>
+            </div>
+            <div class="bundle_checkbox_2">
+                <input type="checkbox" name="bundle" value="bundle">
+                <label for="bundle" class="txt_blue txt-14 fw_5">
+                    Logitech G640 Cloth Gaming Mouse Pad, Moderate surface friction, Consistent surface texture, Stable, Rollable - Black
+                    <span class="txt_red txt_14 fw_5">$38.91</span></label>
+            </div>
+            <div class="bundle_checkbox_3">
+                <input type="checkbox" name="bundle" value="bundle">
+                <label for="bundle" class="txt_blue txt-14 fw_5">Logitech G PRO Mechanical Gaming Keyboard, Ultra Portable Tenkeyless Design, Detachable Micro USB Cable, 16.8 Million Color LIGHTSYNC RGB Backlit Keys
+                    <span class="txt_red txt_14 fw_5">$99.99</span></label>
+            </div>
+        </footer>
+        <section id="slider">
+            <div class="container">
+                <div class="subcontainer">
+                    <div class="slider-wrapper">
+                        <div>
+                            <span class="txt_red txt-17 fw_7">More items to explore</span>
+                        </div>
+                        <br>
+                         <div class="my-slider">
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-1">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a href="https://www.amazon.com/Logitech-PRO-Gaming-Headset-Comfortable/dp/B0943KKQJX/ref=bmx_dp_8k7hhtbo_sccl_1/137-5829861-8987926?pd_rd_w=wmkv7&pf_rd_p=87af4f4c-0b6c-4122-8df1-bcb9f3d7f2c7&pf_rd_r=N0FX8RB1GJQ800Q8TZ59&pd_rd_r=279f8fcd-ee9a-4324-9b74-f6e38920d0c4&pd_rd_wg=ZBWBQ&pd_rd_i=B0943KKQJX&psc=1" class="txt-14 txt_blue txt_deco">
+                                            Logitech G PRO X Gaming Headset - Blue VO!CE, Detachable Microphone,...</a>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-2">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>keyboard</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-3">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>earphones</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-4">
+                                        <a href="#"></a>
+                                    </div>
+                                    br
+                                    <div>
+                                        <h3>mouse</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-5">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>something</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-6">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>something</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-7">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>something</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-8">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>something</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-9">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>something</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img img-10">
+                                        <a href="#"></a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h3>something</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                 </div>
+            </div>
+        </section>
+        
+    </div>
+    <!-- <div style="background: url(./Screenshot\ \(97\).png) center/contain no-repeat; width: 99.3vw; height: 98.9vh; margin: 0; padding: 0;"> -->
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
