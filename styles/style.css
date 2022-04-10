@@ -43,9 +43,7 @@ header
 #first_nav_left > div:hover {
     border: 1px white solid;
 }
-#first_nav_center > div:hover {
-    border: 1px white solid;
-}
+
 #first_nav_right > div:hover {
     border: 1px white solid;
 }
@@ -102,22 +100,22 @@ header
     width: 100%;
 }
 #nav_center_select_container{
-    width: 52px;
+    width: 51px;
     box-sizing: content-box;
 }
 #nav_center_select{
-    background-color: #e14141;
     border-radius: 5px 0 0 5px ;
-    height: 82%;
+    height: 81.7%;
     min-width: 52px; 
     box-sizing:content-box ;     
+    margin-bottom: 1px;
 }
 #nav_center_select select {   
     border-radius: 5px 0 0 5px ;
-    height: 100%;
+    height: 99%;
     min-width: 52px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     box-sizing:content-box ; 
 }
@@ -136,7 +134,9 @@ header
     border: 0px solid;
 }
 #first_nav_center input:focus {
-    outline: none;
+    border-top: 2px solid #E3931E;
+    border-bottom: 2px solid #E3931E;
+    outline: #E3931E;
 }
 
 #first_nav_center button {
@@ -144,7 +144,7 @@ header
     background-color: #febd69;
     border: none;
     outline: none;
-    width: 45px;
+    width: 51px;
     height: 41px;
     border-radius: 0 5px 5px 0;
     background-position: 2px -280px;
@@ -294,7 +294,7 @@ header
 }
 
 #nav_advertize {
-    background-color: #ff0000;
+    background-color: white;
     width: 980px;
     padding: 0 9px 0 15px;
     height: 55px;
@@ -682,6 +682,11 @@ main a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+#add_btn:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
 .add_btn{
     background-color: #ffd814;
     border: #FCD200;
@@ -691,6 +696,12 @@ main a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+.add_btn:hover {
+    background: #F7CA00;
+    border-color: #F2C200;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
 #buy_btn {
     background-color: #ffa41c;
     border-radius: 29px;
@@ -703,6 +714,12 @@ main a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+#buy_btn:hover{
+    background: #FA8900;
+    border-color: #E3931E;
+    box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
+}
+
 #secure_container {
     width: 100%;
     margin-bottom: 13px;
@@ -995,15 +1012,28 @@ main a:hover {
     background-image: url(../assets/images/carusale/10.jpg);
 }
 div [data-controls="prev"] {
-    background-color: #F90;
+    background: url('../assets/images/McBZv0ZvnbehkIx.png') no-repeat -124px -8px;
+	width: 9px;
+	height: 13px;
+    background-size: 400px 900px;
+    padding: 5px;
+    font-size: 0;
+    border: none;
+    background-color: #fff;
     position: absolute;
     top: 187px;
     left: -60px;
     z-index: 10;
 }
 div [data-controls="next"] {
-        
-    background-color: #F90;
+    background: url('../assets/images/McBZv0ZvnbehkIx.png') no-repeat -107px -8px;
+	width: 8px;
+	height: 13px;
+    background-size: 400px 900px;
+    padding: 5px;
+    font-size: 0;
+    border: none;
+    background-color: #fff;
     position: absolute;
     top: 187px;
     right: 0px;
