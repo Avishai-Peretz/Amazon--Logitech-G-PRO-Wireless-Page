@@ -937,6 +937,7 @@ main a:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .container {
     width: 1384px;
@@ -992,6 +993,21 @@ main a:hover {
 }
 .img-10 {
     background-image: url(../assets/images/carusale/10.jpg);
+}
+div [data-controls="prev"] {
+    background-color: #F90;
+    position: absolute;
+    top: 187px;
+    left: -60px;
+    z-index: 10;
+}
+div [data-controls="next"] {
+        
+    background-color: #F90;
+    position: absolute;
+    top: 187px;
+    right: 0px;
+    z-index: 10;
 }
 
 @media(max-width:1600px){
